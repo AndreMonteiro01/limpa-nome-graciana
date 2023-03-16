@@ -1,0 +1,85 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  /* background: rgb(204, 204, 235); */ 
+  background: rgb(226, 178, 178);
+  
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 160px;
+  margin: 20px 0;
+}
+
+ul li, h1 h2 {
+  font-family: 'Roboto Mono', monospace;
+  color: aliceblue;
+}
+
+nav img {
+  width: 35px;
+  height: 35px; 
+}
+
+ul li {
+  list-style: none;
+  line-height: 20px; 
+}
+
+.zapp a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.insta a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.gmail a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #9400FF;
+  text-decoration: none;
+  margin-top: 5px;
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 10% 0 0 -67%;
+  width: 200%;
+  
+}
+
+.container img {
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+}
+
+@media (max-width: 300px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
