@@ -14,7 +14,6 @@ header img {
 
 header {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -29,12 +28,29 @@ header h1 {
 }
 
 header h2 {
-  margin-top: 50px;
+  margin-top: 20px;
   line-height: 30px;
 }
 
 .titulos {
   line-height: 15px;
+}
+
+nav img {
+  width: 35px;
+  height: 35px;
+}
+
+nav, a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  margin: 15px 0 0 15px;
+  color: black;
 }
 
 main img{
@@ -47,6 +63,7 @@ main {
   flex-direction: column;  
   line-height: 30px;
 }
+
 .nome {
   display: flex;
   align-items: center;
@@ -60,6 +77,7 @@ main {
   justify-content: center;
   margin: -20px 0 0 80px;
 }
+
 .cpf {
   display: flex;
   align-items: center;
@@ -81,6 +99,10 @@ main {
   margin: -20px 0 0 6px;
 }
 
+hr {
+  margin-top: 40px;
+}
+
 footer img{
   width: 35px;
   height: 35px;
@@ -90,18 +112,58 @@ footer {
   display: flex;
   gap: 50px;
   justify-content: center;
-}
-
-footer a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  gap: 5px;
-  color: black;
+  margin-top: 0;
 }
 
 @media (max-width: 700px) {
+  header img {
+    display: flex;
+    flex-direction: column;
+    margin: 0 140px;
+  }
+
   header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header h1 {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 40px;
+  }
+
+  header h2 {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  
+  .zap {
+    margin-left: -210px;
+  }
+  
+  .insta {
+    margin-left: -190px;
+  }
+
+  .email {
+    margin-left: -70px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-left: -115px;
+  }
+
+  footer a {
     display: flex;
     flex-direction: column;
   }
